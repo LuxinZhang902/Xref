@@ -1,0 +1,21 @@
+version: '3.7'
+
+services:
+  xref:
+    build:
+      context: ./xref
+
+  frontend:
+    build:
+      context: ./frontend
+
+  nginx_dev:
+    build:
+      context: ./nginx_dev
+    ports:
+      - 1080:1080
+      - 1443:1443
+    restart: always
+    links:
+      - xref # allow this docker to talk to xref docker
+      - frontend

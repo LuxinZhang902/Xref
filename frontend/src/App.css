@@ -1,0 +1,541 @@
+/* .App {
+  text-align: center;
+}
+
+.App {
+  background-color: #ffffff ;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+
+table {
+  width: 1600px;
+  height: 400px;
+}
+
+td {
+  text-align: center;
+  border-bottom: 1px solid black;
+} */
+
+/* .App {
+  text-align: center;
+}
+
+.App {
+  background-color: #ffffff ;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(0, 0, 0);
+}
+
+table {
+  border: 3px solid forestgreen;
+  width: 1600px;
+  height: 400px;
+}
+
+th {
+  border-bottom: 1px solid black;
+}
+
+td {
+  text-align: center;
+  border-bottom: 1px solid black;
+} */
+
+@media only screen and (min-width: 320px){html {font-size: 60%!important;}}
+@media only screen and (min-width: 360px){html {font-size: 72.5%!important;}}
+@media only screen and (min-width: 400px){html {font-size: 82.5%!important;}}
+@media only screen and (min-width: 480px){html {font-size: 60%!important;}}
+@media only screen and (min-width: 600px){html {font-size: 60%!important;}}
+@media only screen and (min-width: 700px){html {font-size: 50%!important;}}
+@media only screen and (min-width: 800px){html {font-size: 70%!important;}}
+@media only screen and (min-width: 1100px){html {font-size: 90%!important;}}
+
+.CSV-page {
+  margin-top: 150px;
+  background-color: #ffffff ;
+  min-height: 100vh;
+  display: inline-block;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+.rule-container {
+  display: inline-flex;
+}
+.ruled{
+  display: inline-block;
+  margin-top: 150px;
+  margin-right: 50px;
+  width: 339px;
+  height: auto;
+  border-radius: 25px;
+  background: rgba(192, 192, 192, 0.9);
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+/* @media (max-width:800px){
+  .one{width:40%;}
+  .two{width:60%}
+  .three{width:100%}
+} */
+
+.App-header {
+  background-color: #202633;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.stable {
+  width: 1200px;   
+  height: 800px; 
+}
+
+.table-td{
+  /* border:0.1rem solid black; */
+  font-size:1rem;
+  height: auto;
+  overflow:hidden;
+  white-space: nowrap;
+  text-align: center;
+}
+.table-td1{
+  /* border:0.1rem solid black; */
+  font-size:1rem;
+  height: auto;
+  overflow:hidden;
+  white-space: nowrap;
+  text-align: left;
+}
+ 
+.textsz{
+  font-size:clamp(0.01rem, -0.131rem + 0.71vw, 1rem);
+}
+ 
+/* .table-td{
+  border:1px solid black;
+  height: 40px;
+  text-overflow:ellipsis;
+  overflow:hidden;
+  white-space: nowrap;
+} */
+
+
+
+
+
+/* ============== Buttons ===================*/
+
+.button-csv {
+  background-color: #f3d5ae;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  white-space: nowrap;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+.button-add {
+  background-color: #d8b5f8;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  white-space: nowrap;
+  border-radius: 12px;
+}
+
+.button-search {
+  background-color: #d4acf9;
+  border: none;
+  color: black;
+  padding: 0.3rem 0.6rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  white-space: nowrap;
+  border-radius: 0.5rem;
+  margin-bottom: 0.5%;
+  margin-left: 0.5%;
+}
+
+.button-cancel {
+  background-color: #72d572;
+  border: none;
+  color: black;
+  padding: 0.3rem 0.6rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  white-space: nowrap;
+  border-radius: 0.5rem;
+  margin-bottom: 0.5%;
+  margin-left: 0.5%;
+}
+
+.button-rename {
+  background-color: #72a2d5;
+  width:4.5rem;
+  border: none;
+  color: black;
+  padding: 0.3rem 0.6rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  white-space: nowrap;
+  border-radius: 0.5rem;
+  margin-bottom: 0.5%;
+  margin-left: 0.5%;
+}
+
+.button-edit {
+  background-color: #44b360;
+  border: none;
+  color: black;
+  padding: 0.3rem 0.6rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  white-space: nowrap;
+  border-radius: 0.5rem;
+  margin-bottom: 0.5%;
+  margin-left: 0.5%;
+}
+
+.floating-button {
+  font-size: 48px;
+  position: absolute;
+  bottom: 24px;
+  right: 16px;
+  background-color: #d4acf9; 
+  border: none;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-action1 {
+  background-color: #3356f5;
+  border: none;
+  color: white;
+  padding: 0.5rem 0.6rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  white-space: nowrap;
+  border-radius: 0.5rem;
+  margin-bottom: 0.5%;
+  margin-left: 0.5%;
+}
+.btn-action2 {
+  background-color: #5d77e9;
+  border: none;
+  color: white;
+  padding: 0.3rem 0.6rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  white-space: nowrap;
+  border-radius: 0.5rem;
+  margin-bottom: 0.5%;
+  margin-left: 0.5%;
+}
+.btn-action {
+  background-color: #3356f5;
+  border: none;
+  color: white;
+  padding: 0.3rem 0.6rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  white-space: nowrap;
+  border-radius: 0.5rem;
+  margin-bottom: 0.5%;
+  margin-left: 0.5%;
+}
+
+/* ============== Container =================== */
+.addAndCSV-container{
+  display:flex;
+  justify-content: flex-end;
+}
+.addcsv {
+  margin: 0 3px 0;
+}
+
+.container {
+  overflow: hidden; /* Clear floats */
+  width: 100%;
+  height: auto;
+}
+
+.search-container{
+  float: none;
+  width: 100%; /* Adjust the width as needed */
+  position: relative;
+  display: grid;
+  height: auto;
+  /* padding-bottom: var(--mb-0-75); */
+  margin-bottom: 0.5%;
+  margin-top: 0.5%;
+  /* mask-border: var(--mb-0-2); */
+  text-align: center
+}
+
+.add-container{
+  float: right;
+  width: 20%; /* Adjust the width as needed */
+  position: relative;
+  display: grid;
+  height: auto;
+  padding-bottom: var(--mb-0-75);
+  margin-top: 30px;
+  mask-border: var(--mb-2);
+}
+
+.table-container{
+  display: grid;
+  flex-flow: row wrap;
+  position: relative;
+  /* display: list-item; */
+  width: 100%;
+  overflow: scroll;
+  height: auto;
+  /* padding-bottom: var(--mb-0-75); */
+  margin-top: 0%;
+  margin-bottom: 5%;
+  /* mask-border: var(--mb-2); */
+}
+
+.footer-container{
+  background: #1b2e56;
+  padding: '20px';
+  text-align: 'center';
+}
+
+.header-container{
+  margin-top: 0%;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width:100%;
+  height: 25px;
+  background: #1b2e56;
+  text-align: center;
+}
+
+.page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+.content-wrap {
+  padding-bottom: 2.5rem;    /* Footer height */
+}
+/*==============csvupload=========*/
+.csvtitle {
+  text-align: center;
+  font-size: large;
+}
+.csvrow {
+  text-align: center;
+  font-size: medium;
+  margin-bottom: 1%;
+  margin-top: 1%;
+}
+.csv-table-container {
+  width: 100%; /* Adjust the width as needed */
+  height: auto;
+  /* padding-bottom: var(--mb-0-75); */
+  margin-bottom: 0.5%;
+  margin-top: 0.5%;
+  /* mask-border: var(--mb-0-2); */
+  text-align:left;
+}
+.csv-table-container1 {
+  height: auto;
+  /* padding-bottom: var(--mb-0-75); */
+  margin-bottom: 0.5%;
+  margin-top: 0.5%;
+  /* mask-border: var(--mb-0-2); */
+}
+.up-csv-button {
+  background-color: #3356f5;
+  border: none;
+  color: white;
+  width:auto;
+  padding: 0.3rem 0.6rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  white-space: nowrap;
+  border-radius: 0.5rem;
+  margin-bottom: 0.5%;
+  margin-left: 0.5%;
+}
+/*==============rules============*/
+.rules-dialog{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width:100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+  display:none;
+}
+.dialog-content{
+  position: absolute;
+  left:50%;
+  top:50%;
+  width: 339px;
+  height: 300px;
+  background: rgba(192, 192, 192, 0.9);
+  border-radius: 25px;
+  transform: translate(-50%, -50%);
+}
+.dialog-close{
+  width:50px;
+  height:50px;
+  font-size: medium;
+  text-align: center;
+}
+.activity-rule{
+  position:absolute;
+  left:0;
+  top:150px;
+  font-size: small;
+  width: 81px;
+  height: 35px;
+  background: #b5b5b5;
+}
+.activity-button {
+  width: 81px;
+  height: 35px;
+  background: rgba(0, 0, 0, 0);
+  border:0;
+  font-size: 14px;
+  font-weight: normal;
+}
+.activity-rule-left {
+  border-radius: 0px 17px 17px 0px;
+}
+.activity-rule-right {
+  border-radius: 17px 0px 0px 17px;
+}
+
+/*==============rules on mobile============*/
+.rules-dialog1{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width:100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+  display:none;
+}
+.dialog-content1{
+  position: absolute;
+  left:50%;
+  top:50%;
+  width: 339px;
+  height: 300px;
+  background: rgba(192, 192, 192, 0.9);
+  border-radius: 25px;
+  transform: translate(-50%, -50%);
+}
+.dialog-close{
+  width:25px;
+  height:25px;
+  margin:auto;
+}
+.activity-rule1{
+  position:absolute;
+  left:0;
+  top:150px;
+  font-size: small;
+  width: 81px;
+  height: 35px;
+  background: #b5b5b5;
+}
+.mobile-container {
+  width: 200px;
+  height: 200px;
+  text-align: left;
+  margin:auto;
+}
+/*================add form==================*/
+.addform {
+  margin:auto;
+}
+
+.form-grou1{
+  width: 100%;
+}

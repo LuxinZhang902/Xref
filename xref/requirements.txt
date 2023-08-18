@@ -1,0 +1,10 @@
+Django==4.2.2
+django-cors-headers==4.1.0               
+djangorestframework==3.14.0     
+djangorestframework-simplejwt
+gunicorn==20.0.4
+psycopg2-binary==2.9.6
+pandas==2.0.3
+requests==2.22.0 
+httpie==1.0.3
+

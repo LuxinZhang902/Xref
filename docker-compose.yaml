@@ -1,0 +1,36 @@
+version: '3.7'
+
+services:
+  xref:
+    build:
+      context: ./xref
+
+  frontend:
+    build:
+      context: ./frontend
+    ports:
+      - 3000:3000
+    links:
+      - xref # allow this docker to talk to xref docker
+
+  certbot:
+    image: certbot/certbot:latest
+    command: sh -c "certbot certonly --webroot --webroot-path /var/www/certbot/ --dry-run -d xref.colab.duke.edu"
+    volumes:
+      - ./certbot/www/:/var/www/certbot/:rw
+      - ./certbot/conf/:/etc/letsencrypt/:rw
+
+  nginx:
+    build:
+      context: ./nginx
+    ports:
+      - 80:80
+      - 443:443
+    restart: always
+    depends_on:
+      - frontend
+    volumes:
+      - ./nginx/:/etc/nginx/conf.d/:ro # Map to ./nginx
+      - ./certbot/www:/var/www/certbot/:ro
+      - ./certbot/conf/:/etc/nginx/ssl/:ro
+      - /etc/nginx/.htpasswd:/etc/nginx/.htpasswd:ro
